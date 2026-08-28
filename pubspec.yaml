@@ -1,0 +1,17 @@
+name: pushgenius
+description: PushGenius Flutter plugin (OneSignal-compatible public API)
+version: 0.1.0
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+dependencies:
+  flutter:
+    sdk: flutter
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: us.pushgeni.flutter
+        pluginClass: PushGeniusPlugin
+      ios:
+        pluginClass: PushGeniusPlugin
