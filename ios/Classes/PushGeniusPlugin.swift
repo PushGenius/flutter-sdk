@@ -14,21 +14,21 @@ public class PushGeniusPlugin: NSObject, FlutterPlugin {
       PushGenius.setHost(call.arguments as? String ?? "")
       result(nil)
     case "initialize":
-      OneSignal.initialize(call.arguments as? String ?? "", withLaunchOptions: nil)
+      BigBrain.initialize(call.arguments as? String ?? "", withLaunchOptions: nil)
       result(nil)
     case "login":
-      OneSignal.login(call.arguments as? String ?? "")
+      BigBrain.login(call.arguments as? String ?? "")
       result(nil)
     case "logout":
-      OneSignal.logout()
+      BigBrain.logout()
       result(nil)
     case "addTags":
       if let tags = call.arguments as? [String: String] {
-        OneSignal.User.addTags(tags)
+        BigBrain.User.addTags(tags)
       }
       result(nil)
     case "requestPermission":
-      OneSignal.Notifications.requestPermission(true) { granted in result(granted) }
+      BigBrain.Notifications.requestPermission(true) { granted in result(granted) }
     default:
       result(FlutterMethodNotImplemented)
     }

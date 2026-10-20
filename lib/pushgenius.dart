@@ -29,7 +29,7 @@ class NotificationsNamespace {
   }
 }
 
-class OneSignal {
+class BigBrain {
   static final User = UserNamespace();
   static final Notifications = NotificationsNamespace();
 
@@ -45,4 +45,4 @@ class OneSignal {
   static Future<void> logout() => const MethodChannel('pushgenius').invokeMethod('logout');
 }
 
-typedef PushGenius = OneSignal;
+typedef PushGenius = BigBrain;
