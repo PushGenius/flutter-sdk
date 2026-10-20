@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.platform         = :ios, "15.0"
   s.swift_version    = "5.9"
   s.frameworks       = "UserNotifications"
+  s.resource_bundles = { "pushgenius_privacy" => ["pushgenius/Sources/pushgenius/Core/PrivacyInfo.xcprivacy"] }
   s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
 end

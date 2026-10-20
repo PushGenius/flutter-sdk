@@ -18,6 +18,9 @@ let package = Package(
             name: "pushgenius",
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework")
+            ],
+            resources: [
+                .copy("Core/PrivacyInfo.xcprivacy")
             ]
         )
     ]
