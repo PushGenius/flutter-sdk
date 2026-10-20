@@ -16,7 +16,7 @@ android_src="$android_sdk/pushgenius/src/main/java/us/pushgeni/sdk"
 [[ -d "$ios_src" ]] || { echo "error: iOS SDK sources not found at $ios_src" >&2; exit 1; }
 [[ -d "$android_src" ]] || { echo "error: Android SDK sources not found at $android_src" >&2; exit 1; }
 
-rsync -a --delete "$ios_src/" "$root/ios/Classes/Core/"
+rsync -a --delete "$ios_src/" "$root/ios/pushgenius/Sources/pushgenius/Core/"
 rsync -a --delete "$android_src/" "$root/android/src/main/kotlin/us/pushgeni/sdk/"
 cp "$android_sdk/pushgenius/src/main/AndroidManifest.xml" "$root/android/src/main/AndroidManifest.xml"
 echo "Synced iOS SDK ($(git -C "$ios_sdk" rev-parse --short HEAD 2>/dev/null || echo "unknown")) and Android SDK ($(git -C "$android_sdk" rev-parse --short HEAD 2>/dev/null || echo "unknown"))."
