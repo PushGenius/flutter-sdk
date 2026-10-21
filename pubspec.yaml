@@ -1,6 +1,6 @@
 name: pushgenius
 description: PushGenius Flutter plugin for push notifications on iOS and Android.
-version: 0.1.0
+version: 0.2.0
 homepage: https://pushgeni.us
 environment:
   sdk: ^3.12.0

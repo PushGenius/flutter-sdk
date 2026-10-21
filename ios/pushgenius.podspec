@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "pushgenius"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "PushGenius Flutter plugin"
   s.homepage         = "https://pushgeni.us"
   s.license          = { :type => "MIT", :file => "../LICENSE" }
